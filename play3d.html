@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="SharkGo — Qera makinash luksoze ne Shqiperi. Rezervo Lamborghini, Mercedes G-Class, Range Rover me nje klik ne WhatsApp." />
+  <meta property="og:title" content="SharkGo — Qera Makinash Luksoze" />
+  <meta property="og:description" content="Flota ekskluzive e makinave luksoze me qera ne Shqiperi. Rezervo direkt ne WhatsApp." />
+  <meta property="og:type" content="website" />
+  <title>SharkGo — Qera Makinash Luksoze</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="play3d.css" />
+</head>
+<body>
+
+  <!-- Intro -->
+  <div id="intro" data-testid="intro-overlay">
+    <div id="intro-word" aria-hidden="true"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header" data-testid="main-header">
+    <a href="#" class="logo" data-testid="logo-link" aria-label="SharkGo">
+      <svg width="30" height="30" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <path d="M4 42c9-16 26-24 42-21l9-11-2 13c4 2 7 6 8 10-7-3-13-3-19 1l-5 11-2-9c-9 0-20 2-31 6z" fill="currentColor"/>
+      </svg>
+      <span>SharkGo</span>
+    </a>
+    <div class="header-actions">
+      <a id="wa-header" data-testid="header-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+      </a>
+      <a id="ig-header" data-testid="header-instagram-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+      </a>
+      <div class="lang-toggle" data-testid="language-toggle">
+        <button id="lang-sq" data-testid="lang-sq-button">SQ</button>
+        <span class="sep">/</span>
+        <button id="lang-en" data-testid="lang-en-button">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Slider -->
+  <main id="slider" data-testid="car-slider">
+    <div id="slides"></div>
+
+    <button id="prev-arrow" data-testid="slider-prev-arrow" aria-label="Previous car">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <button id="next-arrow" data-testid="slider-next-arrow" aria-label="Next car">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+
+    <nav id="tabs" data-testid="car-tabs">
+      <span id="tab-underline"></span>
+    </nav>
+  </main>
+
+  <script src="play3d.js"></script>
+</body>
+</html>
